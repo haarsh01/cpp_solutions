@@ -48,7 +48,7 @@ int main (){
 	for(int j=0; j < size2; j++){
 		cin >> arr2[j];
 	}
-	int ans[] = int [size1 + size2];
+	int *ans = int [size1 + size2];
 	mergeTwoSortedArrays(arr1, size2, arr2, size2, ans);
 	for(int i = 0; i < size1  + size2; i++){
 		cout <<  ans[i] << " ";
